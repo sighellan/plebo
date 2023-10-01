@@ -140,7 +140,7 @@ def do_BO(candidates_file, initial_file, problem_file, related_file, prior_file,
                 # Otherwise the same seed is used for the initial points
                 # as for the choices of RS, giving it an unfair disadvantage
                 # Only relevant for the synth benchmark.
-                np.random.seed(seed*100)
+                np.random.seed(seed+100)
             else:
                 np.random.seed(seed)
             D_start_full = problem_dict['starting_points'][seed]
