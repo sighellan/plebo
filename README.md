@@ -24,7 +24,7 @@ The experiments were run on a cluster, using
 * `cluster_wrapper.sh`
 
 
-The figures are stored in the `Figures` folder.
+The figures are stored in the `Figures` folder. In the case of `plot_prior_fit.py`, use the Python environment created with `requirement-numpyro.txt`.
 To plot and print the results reported, use
 * `plot_cluster_grouped_results.py`
 * `plot_example_tasks.py`
