@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import json
 import numpy as np
 import sys
+plt.rcParams["font.family"] = "Times New Roman"
 
 sys.path.append('mcmc/')
 
@@ -69,7 +70,7 @@ col_dict = {
 
 def plot_prior_fit(hyp_dict, bins, X, col_dict, true_eta, learned_eta):
 
-    fig, ax = plt.subplots(figsize=(6,4))
+    fig, ax = plt.subplots(figsize=(0.6*6,0.6*4))
 
     ax.hist(hyp_dict['cand_vals'], density=True, color=col_dict['Learned'],
             bins=bins, alpha=0.5);
